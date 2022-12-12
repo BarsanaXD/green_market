@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_admin_panel/inner_screens/chat_screen.dart';
+import 'package:grocery_admin_panel/loginScreen.dart';
 import 'package:grocery_admin_panel/providers/orders_provider.dart';
 import 'package:grocery_admin_panel/screens/main_screen.dart';
 import 'package:grocery_admin_panel/widgets/grid_products.dart';
@@ -102,7 +103,7 @@ class _MyAppState extends State<MyApp> {
                 debugShowCheckedModeBanner: false,
                 title: 'Green Market',
                 theme: Styles.themeData(themeProvider.getDarkTheme, context),
-                home: const MainScreen(),
+                home:  LoginPage(),
                 routes: {
                   UploadProductForm.routeName: (context) =>
                       const UploadProductForm(),
